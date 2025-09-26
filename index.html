@@ -3,116 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- format MAPEL-KELOMPOK/BUKAN-JUDUL-KELAS-SEKOLAH -->
     <title>FIS-K-Gas_alam-E2-SMAN-5-BTH</title>
-    <style>
-        body{
-            background-image: image-set("Sprite-0002.png");
-        }
-
-        @font-face {
-            font-family: minecraft;
-            src: url(Minecraft.ttf);
-        }
-        #bgi{
-          position: absolute;
-          top: 0;
-          left: 0;
-        }
-        a{
-            font-family: minecraft;
-            border: 1px;
-            padding: 2px;
-            border-color: darkolivegreen;
-            background-color: rgb(13, 73, 92);
-            color: rgb(10, 141, 91);
-        }
-        #cont{
-            background-color: white;
-            padding: 20px;
-            border: 2px solid green;
-            border-radius: 3px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img id="bgi" src="bgi.png" width="100%" height="auto" onclick="he()">
-    <br>
-    <center>
-        <img src="play.gif" style="width: 150px;height: 150px;">
-    </center>
+    <header>
+        <img src="play.gif" class="play-gif" alt="Pixelated animation">
+    </header>
 
-    <div id="cont" width="100%" height="100%">
-        <center>
-            <a style="color: greenyellow;"> -NAMA ANGGOTA KELOMPOK- </a><br>
-        </center>
-        <a style="color: greenyellow;">=INDYRA</a><br>
-        <a style="color: greenyellow;">=LAILA </a><br>
-        <a style="color: greenyellow;">=RAIHAN</a><br>
-        <a style="color: greenyellow;">=RIDHO</a><br>
+    <main>
+        <section id="cont">
+            <div class="team-list-title">- NAMA ANGGOTA KELOMPOK -</div>
+            <div class="team-list">
+                <div>= INDYRA</div>
+                <div>= LAILA</div>
+                <div>= RAIHAN</div>
+                <div>= RIDHO</div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <div class="info-title">Apa Itu Gas Alam?</div>
+            <div class="info-content">
+                <p>Gas alam adalah bahan bakar fosil berbentuk gas yang terutama terdiri dari metana. Ini ditemukan di reservoir bawah tanah yang dalam dan sering diekstraksi bersama minyak bumi. Gas alam adalah sumber energi yang penting untuk pemanasan, memasak, dan pembangkit listrik. Meskipun lebih bersih daripada batu bara atau minyak, pembakarannya tetap melepaskan karbon dioksida ke atmosfer.</p>
+            </div>
+        </section>
+
+        <div class="video-section">
+            <div class="video-title">▶ Energi Terbarukan vs. Bahan Bakar Fosil</div>
+            <div class="video-container">
+                <embed src="https://www.youtube.com/embed/T3sqt_1A6pA" wmode="transparent" type="video/mp4" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen title="Renewable Energy Video">
+            </div>
         </div>
-    
-    
-        ,<br>
-    <a style="color: greenyellow;">▶ Kenapa Energi Fosil Masih Digunakan ?</a>
-    <div style="width: 360px; height: 215px; float: none; clear: both; margin: 2px auto; background-image: image-set('bg2.png');">
-        <embed
-          src="https://www.youtube.com/embed/xKI-RKCp0k4?si=bZ20-aaOEM17c450"
-          wmode="transparent"
-          type="video/mp4"
-          width="100%" height="90%"
-          allow="autoplay; encrypted-media; picture-in-picture"
-          allowfullscreen
-          title="Keyboard Cat"
-        >    
-    </div>
-    
-    <a style="color: greenyellow;">▶ Bagaimana Cara Pengeboran Minyak Bumi Dan Gas Alam ?</a>
-    <div style="width: 360px; height: 215px; float: none; clear: both; margin: 2px auto; background-image: image-set('bg2.png');">
-        <embed
-          src="https://www.youtube.com/embed/xKI-RKCp0k4?si=dke3wtxKhT4kjZOl"
-          wmode="transparent"
-          type="video/mp4"
-          width="100%" height="90%"
-          allow="autoplay; encrypted-media; picture-in-picture"
-          allowfullscreen
-          title="Keyboard Cat"
-        >
-    </div>
 
-    <a style="color: greenyellow;">▶ Bagaimana Minyak Bumi Dan Gas Alam Terbentuk ?</a>
-    <div style="width: 360px; height: 215px; float: none; clear: both; margin: 2px auto; background-image: image-set('bg2.png');">
-        <embed
-          src="https://www.youtube.com/embed/3VOw86PghwA?si=ddoqrHOnGQaomlhR"
-          wmode="transparent"
-          type="video/mp4"
-          width="100%" height="90%"
-          allow="autoplay; encrypted-media; picture-in-picture"
-          allowfullscreen
-          title="Keyboard Cat"
-        >
-    </div>
+        <div class="video-section">
+            <div class="video-title">▶ Bagaimana Cara Pengeboran Minyak Bumi Dan Gas Alam ?</div>
+            <div class="video-container">
+                <embed src="https://www.youtube.com/embed/xKI-RKCp0k4?si=dke3wtxKhT4kjZOl" wmode="transparent" type="video/mp4" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen title="Oil Drilling Video">
+            </div>
+        </div>
 
-    <a style="color: greenyellow;">▶ Bagaimana Cara Kerja PLTG ?</a>
-    <div style="width: 360px; height: 215px; float: none; clear: both; margin: 2px auto; background-image: image-set('bg2.png');">
-        <embed
-          src="https://www.youtube.com/embed/OnT_qvOQd3E?si=HFeu95XVXvprCSvA"
-          wmode="transparent"
-          type="video/mp4"
-          width="100%" height="90%"
-          allow="autoplay; encrypted-media; picture-in-picture"
-          allowfullscreen
-          title="Keyboard Cat"
-        >
-    </div>
-    <br>
+        <div class="video-section">
+            <div class="video-title">▶ Bagaimana Minyak Bumi Dan Gas Alam Terbentuk ?</div>
+            <div class="video-container">
+                <embed src="https://www.youtube.com/embed/3VOw86PghwA?si=ddoqrHOnGQaomlhR" wmode="transparent" type="video/mp4" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen title="Formation Video">
+            </div>
+        </div>
+
+        <div class="video-section">
+            <div class="video-title">▶ Bagaimana Cara Kerja PLTG ?</div>
+            <div class="video-container">
+                <embed src="https://www.youtube.com/embed/OnT_qvOQd3E?si=HFeu95XVXvprCSvA" wmode="transparent" type="video/mp4" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen title="PLTG Video">
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-text">@2024</div>
+    </footer>
+
     <script>
-        function he(){
+        function he() {
             alert("hello you found me?");
         }
     </script>
-    <center>
-        <a style="color: greenyellow;">@2024</a>
-    </center>
 </body>
 </html>
