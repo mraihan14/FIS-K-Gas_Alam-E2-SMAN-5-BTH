@@ -33,6 +33,12 @@ a {
     border: 4px solid var(--black);
     background: var(--mid-green);
     margin-bottom: 2rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.play-gif:hover {
+    transform: scale(1.1);
 }
 
 .main-title {
@@ -191,6 +197,59 @@ a {
 
 .source-list li {
     margin-bottom: 10px;
+}
+
+#popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.3s, opacity 0.3s;
+}
+
+#popup-container.popup-visible {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.3s;
+}
+
+.popup-content {
+    background-color: var(--mid-green);
+    padding: 30px;
+    border: 4px solid var(--black);
+    box-shadow: 8px 8px 0 var(--black);
+    position: relative;
+    text-align: center;
+    max-width: 400px;
+    transform: scale(0.7);
+    transition: transform 0.3s;
+}
+
+#popup-container.popup-visible .popup-content {
+    transform: scale(1);
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--bright-green);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.close-button:hover {
+    transform: scale(1.2);
 }
 
 /* Responsive Design */

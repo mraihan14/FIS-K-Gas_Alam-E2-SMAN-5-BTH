@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <img src="play.gif" class="play-gif" alt="Pixelated animation">
+        <img src="play.gif" id="play-button" class="play-gif" alt="Pixelated animation">
         <h1 class="main-title">Gas Alam Adventure! 🌍</h1>
     </header>
 
@@ -80,13 +80,6 @@
             <div class="info-title">📧 Kontak Saya</div>
             <div class="info-content">
                 <p>Punya pertanyaan atau saran? Hubungi kami melalui imajinasi! ✨</p>
-                 <div class="team-list-title">- NAMA ANGGOTA KELOMPOK -</div>
-                    <div class="team-list">
-                        <div>= INDYRA</div>
-                        <div>= LAILA</div>
-                        <div>= RAIHAN</div>
-                        <div>= RIDHO</div>
-                    </div>
             </div>
         </section>
 
@@ -108,10 +101,41 @@
         <div class="footer-text">@2024 by Kelompok 2</div>
     </footer>
 
+    <div id="popup-container" class="popup-hidden">
+        <div class="popup-content">
+            <span id="close-button" class="close-button">&times;</span>
+            <div class="team-list-title">- NAMA ANGGOTA KELOMPOK -</div>
+            <div class="team-list">
+                <div>= INDYRA</div>
+                <div>= LAILA</div>
+                <div>= RAIHAN</div>
+                <div>= RIDHO</div>
+            </div>
+        </div>
+    </div>
+
     <script>
-        function he() {
-            alert("hello you found me?");
-        }
+        const playButton = document.getElementById('play-button');
+        const popupContainer = document.getElementById('popup-container');
+        const closeButton = document.getElementById('close-button');
+
+        playButton.addEventListener('click', () => {
+            popupContainer.classList.remove('popup-hidden');
+            popupContainer.classList.add('popup-visible');
+        });
+
+        closeButton.addEventListener('click', () => {
+            popupContainer.classList.add('popup-hidden');
+            popupContainer.classList.remove('popup-visible');
+        });
+
+        // Optional: Close popup when clicking on the background overlay
+        popupContainer.addEventListener('click', (event) => {
+            if (event.target === popupContainer) {
+                popupContainer.classList.add('popup-hidden');
+                popupContainer.classList.remove('popup-visible');
+            }
+        });
     </script>
 </body>
 </html>
