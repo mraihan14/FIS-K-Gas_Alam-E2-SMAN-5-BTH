@@ -35,7 +35,13 @@ a {
     margin-bottom: 2rem;
 }
 
-#cont {
+.main-title {
+    font-size: 2em;
+    margin-bottom: 1rem;
+    text-shadow: 4px 4px 0px var(--black);
+}
+
+#main-menu {
     background-color: var(--mid-green);
     padding: 20px;
     border: 4px solid var(--black);
@@ -46,15 +52,49 @@ a {
     text-align: center;
 }
 
-#cont .team-list-title {
+.menu-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    margin-bottom: 10px;
+}
+
+.menu-list a {
+    display: block;
+    padding: 10px;
+    background: var(--dark-green);
+    border: 4px solid var(--black);
+    box-shadow: 4px 4px 0 var(--black);
+    transition: all 0.1s ease-in-out;
+}
+
+.menu-list a:hover, .menu-list a:focus {
+    background: var(--bright-green);
+    color: var(--black);
+    transform: translate(4px, 4px);
+    box-shadow: 0 0 0 var(--black);
+}
+
+.team-list-title {
     font-weight: bold;
     margin-bottom: 10px;
     font-size: 1.2em;
+    margin-top: 15px;
 }
 
-#cont .team-list div {
+.team-list div {
     margin-bottom: 5px;
     padding: 5px;
+    text-align: center;
 }
 
 .info-section {
@@ -121,6 +161,36 @@ a {
     border: 4px solid black;
     box-shadow: 4px 4px 0 black;
     display: inline-block;
+}
+
+.map-image {
+    max-width: 100%;
+    height: auto;
+    border: 4px solid var(--black);
+    margin-top: 10px;
+    image-rendering: pixelated;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.gallery-image {
+    border: 4px solid var(--black);
+    image-rendering: pixelated;
+    background-color: var(--mid-green);
+}
+
+.source-list {
+    list-style-position: inside;
+    padding-left: 20px;
+}
+
+.source-list li {
+    margin-bottom: 10px;
 }
 
 /* Responsive Design */
